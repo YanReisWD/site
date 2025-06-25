@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Tela Cadastro</title>
+</head>
+<body>
+<div class="container" id="container">
+<div class="form-container sign-up">
+<form>
+<h1>Crie uma Conta</h1>
+<div class="illustration">
+<img src="img/voz (2).png" alt="Ilustração de cadastro">
+</div>
+<span>Use seu email para fazer o registro</span>
+<input type="text" id="fullname" placeholder="Nome">
+<input type="email" id="reg-email" placeholder="E-mail">
+<input type="password" id="reg-senha" placeholder="Senha">
+<input type="password" id="reg-confsenha" placeholder="Confirmar senha" required />
+<button id="enviarreg">Entrar</button>
+</form>
+</div>
+<div class="form-container sign-in">
+<form onsubmit="return validarLogin()">
+<h1>Entrar</h1>
+<div class="illustration">
+<img src="img/voz (2).png" alt="Ilustração de cadastro">
+</div>
+<span>Use seu email para fazer o login</span>
+<input type="email" id="log-email" placeholder="E-mail">
+<input type="password" id="log-senha" placeholder="Senha">
+<a href="#">Esqueceu sua senha?</a>
+<button id="enviarlog">Entrar</button>
+</form>
+</div>
+<div class="toggle-container">
+<div class="toggle">
+<div class="toggle-panel toggle-left">
+<h1>Já tem cadastro?</h1>
+<p>Entre na sua conta e use todos os recursos do site</p>
+<button class="hidden" id="login">Faça login</button>
+</div>
+<div class="toggle-panel toggle-right">
+<h1>Olá, cidadão!</h1>
+<p>Aqui você pode fazer denúncias, elogios, reclamações, solicitações ou
+enviar sugestões !</p>
+<button class="hidden" id="register">Cadastre-se</button>
+</div>
+</div>
+</div>
+</div>
+<script src="scriptlog.js"></script>
+</body>
+</html>

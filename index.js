@@ -1,6 +1,8 @@
 import http from 'http';
 import { Client } from 'pg';
 import bcrypt from 'bcrypt';
+import dotenv from 'dotenv';
+dotenv.config();
 
 console.log('PGHOST:', process.env.PGHOST);
 console.log('PGUSER:', process.env.PGUSER);

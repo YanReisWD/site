@@ -2,6 +2,9 @@ import http from 'http';
 import { Client } from 'pg';
 import bcrypt from 'bcrypt';
 
+console.log('PGHOST:', process.env.PGHOST);
+console.log('PGUSER:', process.env.PGUSER);
+
 const client = new Client({
   user: process.env.PGUSER,
   host: process.env.PGHOST,

@@ -30,7 +30,7 @@ document.getElementById("enviarreg").addEventListener("click", async (e) => {
   }
 
   try {
-    const response = await fetch("http://localhost:3000/register", {
+    const response = await fetch("https://site-b3ke.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -42,7 +42,7 @@ document.getElementById("enviarreg").addEventListener("click", async (e) => {
 
     if (response.ok) {
       alert(data.mensagem || "Registrado com sucesso!");
-      window.location.href='/telaprin.html';
+      window.location.href = '/telaprin.html';
     } else {
       alert(data.erro || "Erro ao registrar.");
     }
@@ -65,7 +65,7 @@ document.getElementById("enviarlog").addEventListener("click", async (e) => {
   }
 
   try {
-    const response = await fetch("http://localhost:3000/login", {
+    const response = await fetch("https://site-b3ke.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, senha })

@@ -42,7 +42,7 @@ document.getElementById("enviarreg").addEventListener("click", async (e) => {
 
     if (response.ok) {
       alert(data.mensagem || "Registrado com sucesso!");
-      window.location.href='../telabase/telaprin.html';
+      window.location.href='../telaprin.html';
     } else {
       alert(data.erro || "Erro ao registrar.");
     }
@@ -77,7 +77,7 @@ document.getElementById("enviarlog").addEventListener("click", async (e) => {
       alert("Login realizado com sucesso!");
       console.log("Usuário:", data.usuario);
       localStorage.setItem("usuarioNome", data.usuario.nome);
-      window.location.href = '../telabase/telaprin.html'; 
+      window.location.href = '../telaprin.html'; 
     } else {
       alert(data.erro || "Erro ao fazer login.");
     }

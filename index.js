@@ -3,11 +3,11 @@ import { Client } from 'pg';
 import bcrypt from 'bcrypt';
 
 const client = new Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'dbusers',
-  password: 'miojocomsalsicha',
-  port: 5432,
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: process.env.PGPORT,
 });
 
 await client.connect();

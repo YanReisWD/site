@@ -24,6 +24,11 @@ await client.query(`
     email TEXT UNIQUE NOT NULL,
     senha TEXT NOT NULL
   );
+  CREATE TABLE IF NOT EXISTS reclamacoes (
+    id SERIAL PRIMARY KEY,
+    id_usuario INTEGER REFERENCES usuarios(id),
+    texto TEXT NOT NULL
+  );
 `);
 
 

@@ -23,6 +23,7 @@ await client.query(`
     nome TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL,
     senha TEXT NOT NULL
+    nasc DATE
   );
   CREATE TABLE IF NOT EXISTS reclamacoes (
     id SERIAL PRIMARY KEY,
